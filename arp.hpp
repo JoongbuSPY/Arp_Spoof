@@ -40,7 +40,7 @@ pcap_t *handle;
 libnet_t *lib_handle, *infect_packet;
 char *dev;
 char *Send, *Rec, *Gate;
-u_int8_t Buf[sizeof(libnet_ethernet_hdr)+sizeof(arp_hdr)]={0,}, Buf2[sizeof(libnet_ethernet_hdr)+sizeof(libnet_icmpv4_hdr)+sizeof(libnet_tcp_hdr)];
+u_int8_t Buf[sizeof(libnet_ethernet_hdr)+sizeof(arp_hdr)]={0,};
 in_addr_t *Sender_Hex_Ip, *Receiver_Hex_Ip, *Gate_Hex_IP;
 int Mac_len2;
 libnet_ether_addr *My_Mac;
