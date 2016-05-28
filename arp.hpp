@@ -15,7 +15,7 @@ struct arp_hdr
     u_int8_t  targetmac[6];
     u_int8_t  targetip[4];
 };
-
+//
 void Call_Device(char **C_dev);
 int  Pcap_init(char **P_dev, pcap_t **P_handle);
 void IntoIP(char **contain , char **ip);
